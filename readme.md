@@ -35,7 +35,7 @@ Navigate into the extracted folder `ggp-base-master`.
 1. Copy the `.kif` file of the specific version of the game you want to test (e.g., `classicMapFromToDistance.kif`) into the folder: ggp-base-master\games
 2. Add a simple METADATA file (JSON) alongside your `.kif` file, for example:  
 {
-  "gameName": "SlovaniaObchodnikmi",
+  "gameName": "SlavsAsTraders",
   "rulesheet": "classicMapFromToDistance.kif"
 }
 
@@ -48,29 +48,31 @@ Check Gradle version and compile the project:
 ```bash
 ./gradlew -v
 ./gradlew assemble
-
+```
 
 In one terminal, start the player application (you can assign a specific port to each player):
+```bash
 ./gradlew player
-
+```
 
 In another terminal, start the server application:
+```bash
 ./gradlew server
-
+```
 
 After launching the server, select the local repository and choose the game you want to test.
 Add players and click Start New Match to begin the simulation.
 
 
-## Defense Presentation  
+### Defense Presentation  
 
 This repository also includes the presentation used for the defense of my thesis:  
-📄 [Defense Presentation](presentation.pdf)  
+📄 [Presentation](presentation.pdf)
 
 It summarizes the goals, implementation, results, and further development possibilities of the project.  
 
 
-## Thesis Text  
+### Thesis Text  
 
 The full text of my Bachelor's thesis is included in this repository:  
-📄 [Bachelor's Thesis](thesis.pdf)  
+📄 [Bachelor's Thesis](thesis.pdf)
